@@ -30,11 +30,14 @@ public class FirstTest {
         }
         System.out.println(driver.getPageSource());
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc='Accessibility']")).click();
-        Thread.sleep(5000);
+        //Thread.sleep(5000); - thread-sleep(msec)
         //driver.manage().timeouts().implicitlyWait(10000); - waitImplicit
         //WebDriverWait webDriverWait = new WebDriverWait(driver, 10); - waitExplicit
         //WebElement h1 = webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(
         //        By.xpath("//android.widget.TextView[@content-desc='Accessibility Node Querying']")));
+        WebDriverWait webDriverWait = new WebDriverWait(driver, 10);
+        WebElement h1 = webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//android.widget.TextView[@content-desc='Accessibility Node Querying']")));
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc='Accessibility Node Querying']")).click();
         List<MobileElement> list = driver.findElements(By.className("android.widget.CheckBox"));
         list.get(0).click();
