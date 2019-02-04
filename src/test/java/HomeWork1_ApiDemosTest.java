@@ -12,7 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
-public class HomeWork1 {
+public class HomeWork1_ApiDemosTest {
 
     public static void main(String[] args) throws InterruptedException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();

@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
 
-public class HomeWork2 {
+public class HomeWork2_ArrayList {
 
     public static void main(String[] args) throws IOException {
 
