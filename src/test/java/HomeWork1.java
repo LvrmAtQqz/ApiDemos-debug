@@ -28,25 +28,25 @@ public class HomeWork1 {
             e.printStackTrace();
         }
         System.out.println(driver.getPageSource());
-        driver.findElement(By.xpath("//android.widget.TextView[@content-desc='App']")).click();
-        WebDriverWait waitNotification = new WebDriverWait(driver, 10);
-        WebElement wn = waitNotification.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//android.widget.TextView[@content-desc='Notification']")));
-        driver.findElement(By.xpath("//android.widget.TextView[@content-desc='Notification']")).click();
-        WebDriverWait waitIncomingMessage = new WebDriverWait(driver, 10);
-        WebElement wim = waitIncomingMessage.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//android.widget.TextView[@content-desc='IncomingMessage']")));
-        driver.findElement(By.xpath("//android.widget.TextView[@content-desc='IncomingMessage']")).click();
-        WebDriverWait waitShowAppNotification = new WebDriverWait(driver, 10);
-        WebElement wsan = waitShowAppNotification.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//android.widget.Button[@content-desc='Show App Notification']")));
-        driver.findElement(By.xpath("//android.widget.Button[@content-desc='Show App Notification']")).click();
-        ((AndroidDriver) driver).openNotifications();
-        WebDriverWait waitApiDemos = new WebDriverWait(driver, 10);
-        WebElement wad = waitApiDemos.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//android.widget.TextView[@text='API Demos']")));
-        driver.findElement(By.xpath("//android.widget.TextView[@text='API Demos']"));
-        System.out.println("PASSED");
+            driver.findElement(By.xpath("//android.widget.TextView[@content-desc='App']")).click();
+            WebDriverWait waitNotification = new WebDriverWait(driver, 10);
+            WebElement wn = waitNotification.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//android.widget.TextView[@content-desc='Notification']")));
+            driver.findElement(By.xpath("//android.widget.TextView[@content-desc='Notification']")).click();
+            WebDriverWait waitIncomingMessage = new WebDriverWait(driver, 10);
+            WebElement wim = waitIncomingMessage.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//android.widget.TextView[@content-desc='IncomingMessage']")));
+            driver.findElement(By.xpath("//android.widget.TextView[@content-desc='IncomingMessage']")).click();
+            WebDriverWait waitShowAppNotification = new WebDriverWait(driver, 10);
+            WebElement wsan = waitShowAppNotification.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//android.widget.Button[@content-desc='Show App Notification']")));
+            driver.findElement(By.xpath("//android.widget.Button[@content-desc='Show App Notification']")).click();
+            ((AndroidDriver) driver).openNotifications();
+            WebDriverWait waitApiDemos = new WebDriverWait(driver, 10);
+            WebElement wad = waitApiDemos.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//android.widget.TextView[@text='API Demos']")));
+            driver.findElement(By.xpath("//android.widget.TextView[@text='API Demos']"));
+            System.out.println("PASSED");
     }
 
 }
